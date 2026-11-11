@@ -52,31 +52,7 @@ hostname -I
 | TCP | `tcp_capture.pcapng` | 12 |
 | UDP | `udp_capture.pcapng` | 2 |
 
-### ARP Analysis
-
-Captured ARP request and reply packets to observe IPv4-to-MAC address resolution.
-
-![ARP Analysis](screenshots/arp_analysis.png)
-
-### ICMP Analysis
-
-Used the ping command to generate ICMP Echo Request and Echo Reply packets.
-
-![ICMP Analysis](screenshots/icmp_analysis.png)
-
-### TCP Analysis
-
-Generated HTTP traffic using curl and observed the TCP three-way handshake, HTTP request-response, and connection termination.
-
-![TCP Analysis](screenshots/tcp_analysis.png)
-
-### UDP Analysis
-
-Generated a DNS query for `example.com` using UDP port 53 and analysed the DNS request and response.
-
-![UDP Analysis](screenshots/udp_analysis.png)
-
-## 5. Packet Capture Validation
+## 4. Packet Capture Validation
 
 All four capture files were checked using TShark protocol hierarchy statistics.
 
@@ -87,12 +63,12 @@ All four capture files were checked using TShark protocol hierarchy statistics.
 | TCP | Ethernet → IPv4 → TCP → HTTP |
 | UDP | Ethernet → IPv4 → UDP → DNS |
 
-## 6. Project Reports
+## 5. Project Reports
 
 - [Study Report](docs/Study_Report.pdf)
 - [Analysis Report](docs/Analysis_Report.pdf)
 
-## 7. Repository Structure
+## 6. Repository Structure
 
 ```text
 ethernet-communication-analysis/
@@ -112,6 +88,6 @@ ethernet-communication-analysis/
     └── udp_capture.pcapng
 ```
 
-## 8. Conclusion
+## 7. Conclusion
 
 The project successfully captured and analysed ARP, ICMP, TCP, and UDP traffic in a Linux environment. The packet captures were validated using TShark, and the observations were documented in the study and analysis reports.
