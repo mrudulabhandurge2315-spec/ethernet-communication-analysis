@@ -63,6 +63,8 @@ All four capture files were checked using TShark protocol hierarchy statistics.
 | TCP | Ethernet → IPv4 → TCP → HTTP |
 | UDP | Ethernet → IPv4 → UDP → DNS |
 
+<img width="1121" height="557" alt="image" src="https://github.com/user-attachments/assets/cace1f77-7475-45cd-adb1-6bcb7b660d59" />
+
 ## 5. Project Reports
 
 - [Study Report](docs/Study_Report.pdf)
